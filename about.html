@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .mx-auto ul li {
+    /* padding: 0px 0px; */
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.5ms ease;
+}
+.mx-auto ul li:hover{
+    background-color: #8A1CF7;
+}
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        /* Left section with image */
+        .image-section {
+            width: 100%;
+            height: 100vh;
+            background-image: url('/images/slide3.jpg'); /* Replace with actual image URL */
+            background-size: cover;
+            background-position: center;
+            margin-top: 30px;
+        }
+
+        /* Right section with text */
+        .text-section {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Styling for the content */
+        .text-content {
+            max-width: 80%;
+           margin-right: 5%;
+        }
+
+        .text-content h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .text-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Centering the nav items */
+        .nav-bar .navbar-nav {
+            justify-content: center;
+            width: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        footer {
+            height: 300px;
+            background-color: black;
+            color: white;
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            padding: 20px;
+        }
+        
+
+.request-proposal button {
+    background-color: #8A1CF7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.about_list ul li {
+    /* padding: 0px 0px; */
+    font-size: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3ms ease;
+}
+.about_list ul li:hover{
+    background-color: #8A1CF7;
+}
+#selected{
+    background-color: #8A1CF7;
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">STRATCORE</a>
+                    <div class="mx-auto">
+                        <ul class="navbar-nav mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about.html">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/request.html">Request Service</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/events.html">Events</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div style="display: flex;" class="about">
+         <!-- Main Container -->
+    <div class="container">
+        <!-- Left Image Section -->
+        <div class="image-section"></div>
+    </div>
+    <!-- Right Text Section -->
+    <div style="margin-right: 100px; margin-left: 100px; " class="text-section">
+        <div class="text-content">
+            <div class="about_list">
+                <ul style="display: flex; " >
+                    <li id="selected" style=" margin-right: 15px; " ><h3>About Us</h3></li>
+                    <li class="l2" style="margin-left: 10px; margin-right: 15px; " ><h3>Mission</h3></li>
+                    <li class="l3" style="margin-left: 10px; margin-right: 15px; " ><h3>Vision</h3></li>
+                    <li class="l4" style="margin-left: 10px; margin-right: 15px; " ><h3>Goals</h3></li>
+                </ul>
+            </div>
+            <hr>
+            <p>
+                STRATCORE: 
+                A Strategic Communications & Management Consultancy specializing 
+                in strategy-driven 360° PR, brand and reputation management, crisis 
+                communication, investor and government relations, as well as event and 
+                management consultancy services. 
+                STRATCORE leverages its highly professional team and wide global 
+                network to deliver timely, comprehensive, and custom PR & management 
+                solutions for individuals, companies, institutions, and governments.
+            </p>
+        </div>
+    </div>
+    </div>
+</div><hr>
+<div class="foot">
+<footer>
+    <div style="justify-items: center;" ><h2>CONTACT US</h2></div>
+    <div style="display: flex; " class="footer-container">
+        <div style="margin-left: 150px;" class="contact-info">
+            <p>Email: contact@example.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+        <div style="margin-left: 250px;" class="social-media">
+            <a href="https://twitter.com" target="_blank"><img src="twitter-icon.png" alt="Twitter"></a>
+            <a href="https://whatsapp.com" target="_blank"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
+            <a href="https://instagram.com" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
+            <a href="https://facebook.com" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
+        </div>
+        <div style="margin-left: 250px;" class="request-proposal">
+            <button onclick="location.href='request-proposal.html'">Request Proposal</button>
+        </div>
+    </div>
+</footer>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ZO3mMI3A7QWk6Oj3wwZP+XYsG3oC+ioMbTj/8LZPT1JkKMXF3C2N3B0DHXz1j/jZ" crossorigin="anonymous"></script>
+</body>
+</html>
